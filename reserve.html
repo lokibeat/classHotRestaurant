@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<<<<<<< HEAD
 
 	<div class="container">
 
@@ -76,6 +77,27 @@
 	    </footer>
 
 	</div>
+=======
+    <h1>Reserve</h1>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+
+        $("#search-btn").on("click", (event) => {
+            $.get("/api/reserve", (data)=>{
+                if (data) {
+                    console.log(data);
+                }
+                else {
+                    console.log('Nothing here!');
+                }
+            });
+        });
+
+    </script>
+>>>>>>> ad624f02d961b53748b39f283a03fcc88a011123
 
 </body>
 </html>
